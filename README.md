@@ -1,7 +1,7 @@
 # EF2M45duino_development
 ## ArduinoDemo Folder
-*ArduinoProject
-*FPGAProject
+* ArduinoProject
+* FPGAProject
 
 ## MapleLibirary Folder
 
