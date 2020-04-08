@@ -1,0 +1,47 @@
+============================================================
+   Tang Dynasty, V4.6.14756
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = F:/Anlogic/TD4.6.3/bin/td.exe
+   Built at =   17:01:29 Oct 21 2019
+   Run by =     Administrator
+   Run Date =   Sat Jan 11 17:00:19 2020
+
+   Run on =     PC-20190124GFMB
+============================================================
+RUN-1002 : start command "import_device ef2_4.db -package EF2M45LG48B -basic"
+ARC-1001 : Device Initialization.
+ARC-1001 : -----------------------------------------------------
+ARC-1001 :       OPTION       |        IO         |   SETTING   
+ARC-1001 : -----------------------------------------------------
+ARC-1001 :      programn      |        P4         |  dedicated  
+ARC-1001 :   tdi/tms/tck/tdo  |  P13/P11/P12/P14  |  dedicated  
+ARC-1001 : -----------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "read_verilog -file al_ip/sys_pll.v"
+HDL-1007 : analyze verilog file al_ip/sys_pll.v
+HDL-1007 : elaborate module sys_pll in al_ip/sys_pll.v(23)
+HDL-1007 : elaborate module EF2_LOGIC_BUFG in F:/Anlogic/TD4.6.3/arch/ef2_macro.v(81)
+HDL-1007 : elaborate module EF2_PHY_PLL(FIN="25.000",FBCLK_DIV=8,CLKC0_DIV=5,CLKC1_DIV=40,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FEEDBK_PATH="CLKC0_EXT",STDBY_ENABLE="DISABLE",CLKC0_CPHASE=4,CLKC1_CPHASE=39,GMC_GAIN=2,ICP_CURRENT=9,KVCO=2,LPF_CAPACITOR=1,LPF_RESISTOR=8,PLLRST_ENA="DISABLE",SYNC_ENABLE="DISABLE",OFFSET_MODE="EXT",CLKC0_DUTY=0.5,CLKC1_DUTY=0.5,CLKC0_DUTY_INT=3,CLKC1_DUTY_INT=20) in F:/Anlogic/TD4.6.3/arch/ef2_macro.v(2694)
+HDL-1200 : Current top model is sys_pll
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file F:/Anlogic/TD4.6.3/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "sys_pll"
+SYN-1011 : Flatten model sys_pll
+SYN-1014 : Optimize round 1
+SYN-1032 : 6/0 useful/useless nets, 3/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+RUN-1002 : start command "map_macro -nopad"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2501 : 1 BUFG to GCLK
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 6/1 useful/useless nets, 4/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 6/1 useful/useless nets, 4/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 6/1 useful/useless nets, 4/1 useful/useless insts
+RUN-1002 : start command "write_verilog al_ip/sys_pll_sim.v"
+HDL-1201 : write out verilog file al_ip/sys_pll_sim.v

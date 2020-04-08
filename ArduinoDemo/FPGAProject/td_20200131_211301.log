@@ -1,0 +1,45 @@
+============================================================
+   Tang Dynasty, V4.6.14756
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = F:/Anlogic/TD4.6.3/bin/td.exe
+   Built at =   17:01:29 Oct 21 2019
+   Run by =     Administrator
+   Run Date =   Fri Jan 31 21:13:01 2020
+
+   Run on =     PC-20190124GFMB
+============================================================
+RUN-1002 : start command "import_device ef2_4.db -package EF2M45LG48B -basic"
+ARC-1001 : Device Initialization.
+ARC-1001 : -----------------------------------------------------
+ARC-1001 :       OPTION       |        IO         |   SETTING   
+ARC-1001 : -----------------------------------------------------
+ARC-1001 :      programn      |        P4         |  dedicated  
+ARC-1001 :   tdi/tms/tck/tdo  |  P13/P11/P12/P14  |  dedicated  
+ARC-1001 : -----------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "read_verilog -file al_ip/bram256kbit.v"
+HDL-1007 : analyze verilog file al_ip/bram256kbit.v
+HDL-1007 : elaborate module bram256kbit in al_ip/bram256kbit.v(14)
+HDL-1007 : elaborate module EF2_PHY_BRAM256K(MODE="SP",REGMODE_B="OUTREG",INIT_FILE="NONE") in F:/Anlogic/TD4.6.3/arch/ef2_macro.v(863)
+HDL-1200 : Current top model is bram256kbit
+HDL-1100 : Inferred 0 RAMs.
+RUN-1002 : start command "optimize_rtl"
+RUN-1001 : Open license file F:/Anlogic/TD4.6.3/license/Anlogic.lic
+SYN-1012 : SanityCheck: Model "bram256kbit"
+SYN-1011 : Flatten model bram256kbit
+SYN-1014 : Optimize round 1
+SYN-1032 : 87/0 useful/useless nets, 2/0 useful/useless insts
+SYN-1019 : Optimized 0 mux instances.
+SYN-1015 : Optimize round 1, 0 better
+RUN-1002 : start command "map_macro -nopad"
+SYN-2501 : Processed 0 LOGIC_BUF instances.
+SYN-2571 : Optimize after map_dsp, round 1
+SYN-1032 : 87/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2571 : Optimize after map_dsp, round 1, 0 better
+SYN-2501 : Optimize round 1
+SYN-1032 : 87/1 useful/useless nets, 3/1 useful/useless insts
+SYN-2501 : Optimize round 1, 0 better
+SYN-1032 : 87/1 useful/useless nets, 3/1 useful/useless insts
+RUN-1002 : start command "write_verilog al_ip/bram256kbit_sim.v"
+HDL-1201 : write out verilog file al_ip/bram256kbit_sim.v

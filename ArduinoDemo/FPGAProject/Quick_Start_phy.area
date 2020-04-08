@@ -1,0 +1,43 @@
+standard
+***Report Model: quick_start***
+
+IO Statistics
+#IO                     9
+  #input                2
+  #output               3
+  #inout                4
+
+Utilization Statistics
+#lut                  295   out of   4480    6.58%
+#reg                  292   out of   4480    6.52%
+#le                   470
+  #lut only           178   out of    470   37.87%
+  #reg only           175   out of    470   37.23%
+  #lut&reg            117   out of    470   24.89%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                4   out of      6   66.67%
+#bram256k               1   out of      1  100.00%
+#mcu                    1   out of      1  100.00%
+#pad                    9   out of     31   29.03%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      1  100.00%
+
+
+Detailed IO Report
+
+Name            Direction     Location     IOStandard     DriveStrength     PackReg                  
+fpga_clk_in     INPUT         P22          LVCMOS25       N/A               NONE                     
+fpga_rst_n      INPUT         P3           LVCMOS25       N/A               NONE                     
+exti_out        OUTPUT        P44          LVCMOS25       16                NONE                     
+hw_led          OUTPUT        P15          LVCMOS25       16                NONE                     
+pwmout9         OUTPUT        P18          LVCMOS25       16                NONE                     
+button1         INOUT         P21          LVCMOS25       16                TREG                     
+button2         INOUT         P24          LVCMOS25       16                TREG                     
+io_led1         INOUT         P16          LVCMOS25       16                TREG                     
+io_led2         INOUT         P19          LVCMOS25       16                TREG                     
+

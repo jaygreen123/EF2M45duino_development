@@ -1,0 +1,35 @@
+standard
+***Report Model: quick_start***
+
+IO Statistics
+#IO                     9
+  #input                2
+  #output               3
+  #inout                4
+
+Utilization Statistics
+#lut                   47   out of   4480    1.05%
+#reg                   47   out of   4480    1.05%
+#le                    77
+  #lut only            30   out of     77   38.96%
+  #reg only            30   out of     77   38.96%
+  #lut&reg             17   out of     77   22.08%
+#dsp                    0   out of     15    0.00%
+#bram                   0   out of     12    0.00%
+  #bram9k               0
+  #fifo9k               0
+#bram32k                0   out of      6    0.00%
+#bram256k               1   out of      1  100.00%
+#mcu                    1   out of      1  100.00%
+#pad                    9   out of     31   29.03%
+  #ireg                 0
+  #oreg                 0
+  #treg                 0
+#pll                    1   out of      1  100.00%
+
+Report Hierarchy Area:
++-------------------------------------------+
+|Instance |Module      |le    |lut   |seq   |
++-------------------------------------------+
+|top      |quick_start |77    |47    |47    |
++-------------------------------------------+

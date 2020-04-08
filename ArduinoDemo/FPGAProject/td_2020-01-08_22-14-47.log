@@ -1,0 +1,61 @@
+============================================================
+   Tang Dynasty, V4.6.14756
+   Copyright:   Shanghai Anlogic Infotech Co., Ltd.
+                2011 - 2021
+   Executable = F:/Anlogic/TD4.6.3/bin/td.exe
+   Built at =   17:01:29 Oct 21 2019
+   Run by =     Administrator
+   Run Date =   Wed Jan  8 22:14:47 2020
+
+   Run on =     PC-20190124GFMB
+============================================================
+RUN-1002 : start command "open_project Quick_Start.al"
+HDL-1007 : analyze verilog file al_ip/sys_pll.v
+HDL-1007 : analyze verilog file al_ip/AL_MCU.v
+HDL-1007 : analyze verilog file src/quick_start.v
+RUN-1002 : start command "import_device ef2_4.db -package EF2M45LG48B"
+ARC-1001 : Device Initialization.
+ARC-1001 : -----------------------------------------------------
+ARC-1001 :       OPTION       |        IO         |   SETTING   
+ARC-1001 : -----------------------------------------------------
+ARC-1001 :      programn      |        P4         |  dedicated  
+ARC-1001 :   tdi/tms/tck/tdo  |  P13/P11/P12/P14  |  dedicated  
+ARC-1001 : -----------------------------------------------------
+ARC-1004 : Device setting, marked 5 dedicate IOs in total.
+RUN-1002 : start command "download -bit Quick_Start.bit -mode program_spi -v -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EF2M45B
+RUN-1002 : start command "bit_to_vec -chip EF2M45B -m program_spi -bit Quick_Start.bit"
+RUN-1002 : start command "program_spief -cable 0 -spd 6"
+RUN-1003 : finish command "program_spief -cable 0 -spd 6" in  30.653986s wall, 3.416422s user + 0.624004s system = 4.040426s CPU (13.2%)
+
+RUN-1004 : used memory is 229 MB, reserved memory is 195 MB, peak memory is 231 MB
+RUN-1002 : start command "bit_to_vec -chip EF2M45B -m verify_spi -bit Quick_Start.bit"
+RUN-1002 : start command "program -cable 0 -spd 4"
+RUN-1003 : finish command "program -cable 0 -spd 4" in  7.278006s wall, 0.436803s user + 0.109201s system = 0.546003s CPU (7.5%)
+
+RUN-1004 : used memory is 173 MB, reserved memory is 139 MB, peak memory is 231 MB
+RUN-1002 : start command "program -cable 0 -spd 1"
+RUN-1003 : finish command "download -bit Quick_Start.bit -mode program_spi -v -spd 6 -sec 64 -cable 0" in  40.120389s wall, 5.241634s user + 0.982806s system = 6.224440s CPU (15.5%)
+
+RUN-1004 : used memory is 136 MB, reserved memory is 104 MB, peak memory is 231 MB
+GUI-1001 : Download success!
+RUN-1002 : start command "download -bit Quick_Start.bit -mode program_spi -v -spd 6 -sec 64 -cable 0"
+PRG-2014 : Chip validation success: EF2M45B
+RUN-1002 : start command "bit_to_vec -chip EF2M45B -m program_spi -bit Quick_Start.bit"
+RUN-1003 : finish command "bit_to_vec -chip EF2M45B -m program_spi -bit Quick_Start.bit" in  1.011880s wall, 0.982806s user + 0.015600s system = 0.998406s CPU (98.7%)
+
+RUN-1004 : used memory is 227 MB, reserved memory is 194 MB, peak memory is 231 MB
+RUN-1002 : start command "program_spief -cable 0 -spd 6"
+RUN-1003 : finish command "program_spief -cable 0 -spd 6" in  30.435240s wall, 3.291621s user + 0.530403s system = 3.822024s CPU (12.6%)
+
+RUN-1004 : used memory is 229 MB, reserved memory is 196 MB, peak memory is 231 MB
+RUN-1002 : start command "bit_to_vec -chip EF2M45B -m verify_spi -bit Quick_Start.bit"
+RUN-1002 : start command "program -cable 0 -spd 4"
+RUN-1003 : finish command "program -cable 0 -spd 4" in  7.205031s wall, 0.343202s user + 0.171601s system = 0.514803s CPU (7.1%)
+
+RUN-1004 : used memory is 173 MB, reserved memory is 139 MB, peak memory is 231 MB
+RUN-1002 : start command "program -cable 0 -spd 1"
+RUN-1003 : finish command "download -bit Quick_Start.bit -mode program_spi -v -spd 6 -sec 64 -cable 0" in  39.880201s wall, 5.116833s user + 0.780005s system = 5.896838s CPU (14.8%)
+
+RUN-1004 : used memory is 136 MB, reserved memory is 104 MB, peak memory is 231 MB
+GUI-1001 : Download success!

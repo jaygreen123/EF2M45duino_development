@@ -1,0 +1,33 @@
+standard
+***Report Model: quick_start***
+
+IO Statistics
+#IO                     9
+  #input                2
+  #output               3
+  #inout                4
+
+Gate Statistics
+#Basic gates           57
+  #and                  1
+  #nand                 0
+  #or                   0
+  #nor                  0
+  #xor                  0
+  #xnor                 0
+  #buf                  0
+  #not                  5
+  #bufif1               4
+  #MX21                 0
+  #FADD                 0
+  #DFF                 47
+  #LATCH                0
+#MACRO_ADD              3
+#MACRO_EQ               1
+
+Report Hierarchy Area:
++----------------------------------------------+
+|Instance |Module      |gates  |seq    |macros |
++----------------------------------------------+
+|top      |quick_start |10     |47     |5      |
++----------------------------------------------+
